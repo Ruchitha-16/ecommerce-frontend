@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile | Click & Cart</title>
+    <link rel="stylesheet" href="styles/profile.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h2>My Profile</h2>
+    <button onclick="logout()">Logout</button>
+</header>
+
+<div class="profile-container">
+
+    <!-- PROFILE IMAGE -->
+    <div class="image-box">
+        <img id="profileImage" src="assets/default-profile.png">
+        <input type="file" id="imageInput" accept="image/*">
+    </div>
+
+    <!-- USER DETAILS -->
+    <div class="details-box">
+        <label>Username</label>
+        <input type="text" id="username">
+
+        <button onclick="updateProfile()">Update Profile</button>
+    </div>
+
+</div>
+
+<script src="scripts/profile.js"></script>
+</body>
+</html>

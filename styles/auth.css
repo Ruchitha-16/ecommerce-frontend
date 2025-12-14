@@ -1,0 +1,21 @@
+body {
+    background: radial-gradient(circle, #2b1055, #000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-box {
+    background: #1a1033;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #b388ff;
+    width: 300px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}

@@ -3,14 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Frontend</title>
+    <title>Click & Cart</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
-    <header>
-        <h1>Welcome to Our Online Store</h1>
-    </header>
 
-    <script src="scripts/app.js"></script>
+<body>
+
+<!-- HEADER -->
+<header class="navbar">
+    <div class="left">
+        <img src="assets/Click & Cart logo.png" class="logo">
+        <h2>Welcome to Our Online Store</h2>
+    </div>
+
+    <div class="right">
+        <img src="assets/default-profile.png" class="profile-pic"
+             onclick="location.href='profile.html'">
+    </div>
+</header>
+
+<!-- CATEGORY FILTER -->
+<section class="categories">
+    <button onclick="filterProducts('all')">All</button>
+    <button onclick="filterProducts('men')">Men</button>
+    <button onclick="filterProducts('women')">Women</button>
+    <button onclick="filterProducts('kids')">Kids</button>
+    <button onclick="filterProducts('cosmetics')">Cosmetics</button>
+    <button onclick="filterProducts('accessories')">Accessories</button>
+</section>
+
+<!-- PRODUCT GRID -->
+<main class="container">
+    <div id="productGrid" class="product-grid"></div>
+</main>
+
+<script src="scripts/products.js"></script>
+<script src="scripts/app.js"></script>
 </body>
+
 </html>
